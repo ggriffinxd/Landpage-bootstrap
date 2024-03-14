@@ -1,0 +1,117 @@
+@import "./variables.scss";
+
+.header {
+  font-size: 16px;
+  font-weight: bold;
+
+  #navItem {
+    margin-left: 40px;
+    &:hover {
+      color: $link-hover;
+      transition: 0.3s;
+    }
+    &:not(:hover) {
+      transition: 0.3s;
+    }
+  }
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  height: 90px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.logoPc {
+  width: 140px;
+  border-radius: 10px;
+  margin: 0 15px 0 0;
+}
+
+#button {
+  padding: $padding-button;
+  font-size: $font-button-size;
+  border: #fff 3px solid;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-size: 16px;
+  height: 15vh;
+  color: $copy-color;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: $link-hover;
+      transition: 0.3s;
+    }
+    &:not(:hover) {
+      transition: 0.3s;
+    }
+  }
+  .copyGgriffinxd {
+    color: $copy-color;
+  }
+}
+
+.downloadDesc {
+  background-color: #000;
+  height: 85vh;
+  padding-top: 300px;
+  font-size: 20px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+
+    &:hover {
+      text-decoration: none;
+      transition: 0.3s;
+      border-bottom: 1px solid $link-hover;
+      color: $link-hover;
+    }
+    &:not(:hover) {
+      transition: 0.3s;
+    }
+  }
+  button {
+    border: 2px solid #fff;
+    margin: 0 10px;
+  }
+}
+
+//media-query
+@media (max-width: 1000px) {
+  .logoPc {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .downloadDesc {
+    padding-top: 200px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 405px) {
+  .footer {
+    font-size: 12px;
+  }
+
+  button {
+    width: 160px;
+  }
+}

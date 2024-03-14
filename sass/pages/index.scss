@@ -1,0 +1,62 @@
+@import "../commonElements/variables.scss";
+
+.container00 {
+  &.container01 {
+    background-image: url(.././imgs/02.jpg);
+  }
+  &.container02 {
+    background-image: url(.././imgs/01.jpg);
+  }
+  &.container03 {
+    background-image: url(.././imgs/03.jpg);
+  }
+  &.container04 {
+    background-image: url(.././imgs/04.jpg);
+  }
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+  margin-bottom: 10px;
+}
+
+.mediumTitle {
+  width: 650px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1400px) {
+  .titlePadding {
+    padding-top: 350px;
+  }
+
+  .mediumTitle,
+  .shortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .mediumTitle {
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+  .shortTitle,
+  .mediumTitle {
+    font-size: 30px;
+  }
+}
